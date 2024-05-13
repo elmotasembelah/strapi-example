@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "tests",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "Blog",
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test",
     "description": ""
   },
   "options": {
@@ -24,7 +24,7 @@
       },
       "type": "string"
     },
-    "description": {
+    "desc": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,7 +32,7 @@
       },
       "type": "text"
     },
-    "featuredImage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -41,18 +41,9 @@
       ],
       "pluginOptions": {
         "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
           "localized": true
         }
-      },
-      "type": "uid",
-      "targetField": "title"
+      }
     },
     "content": {
       "pluginOptions": {
@@ -66,11 +57,6 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
-    },
-    "auther": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::auther.auther"
     }
   }
 }
